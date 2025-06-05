@@ -1,0 +1,3 @@
+#!/usr/env sh
+
+npx commitlint --edit "$1"

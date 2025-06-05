@@ -1,0 +1,8 @@
+{
+  "!(.github/workflows/*.yml|*.{d.ts,js,md}|package.json)": [
+    "prettier --ignore-unknown --write"
+  ],
+  ".github/workflows/*.yml": ["better-sort-github-actions", "prettier --write"],
+  "*.{js,md}": ["eslint --cache --fix --quiet", "prettier --write"],
+  "package.json": ["better-sort-package-json", "prettier --write"]
+}
