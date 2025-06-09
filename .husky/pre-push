@@ -1,0 +1,5 @@
+#!/usr/env sh
+
+npm run --if-present type-check
+npm run --if-present deps-check
+npm test

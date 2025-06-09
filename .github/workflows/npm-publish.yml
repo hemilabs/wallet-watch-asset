@@ -1,0 +1,19 @@
+name: NPM Publish
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  publish-to-npm:
+    permissions:
+      contents: read
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hemilabs/actions/publish-to-npm@b471cbde41d4cb795b7840eb8608b95168970de1
+        with:
+          provenance: "true"
+          token: ${{ secrets.NPM_TOKEN }}

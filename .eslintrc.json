@@ -1,0 +1,14 @@
+{
+  "extends": ["bloq", "bloq/node", "prettier"],
+  "overrides": [
+    {
+      "extends": ["bloq/mocha", "prettier"],
+      "files": ["*.test.js"]
+    },
+    {
+      "extends": ["bloq/markdown", "prettier"],
+      "files": ["*.md"]
+    }
+  ],
+  "root": true
+}
