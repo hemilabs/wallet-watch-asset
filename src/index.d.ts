@@ -6,10 +6,10 @@ interface Provider {
 interface Token {
   address: `0x${string}`;
   chainId: number;
-  decimals: number;
+  decimals?: number;
   logoURI?: string;
-  name: string;
-  symbol: string;
+  name?: string;
+  symbol?: string;
 }
 
 declare function watchAsset(
