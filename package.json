@@ -20,7 +20,7 @@
   "scripts": {
     "ci-checks": "eslint . && prettier --check . && npm run type-check && npm run deps-check",
     "deps-check": "knip",
-    "prepare": "husky install",
+    "prepare": "husky",
     "test": "node --test",
     "type-check": "tsc"
   },
