@@ -48,7 +48,9 @@ async function watchAsset(provider, account, token, storage) {
     },
   });
   if (!success) {
-    throw new Error(`${symbol} not added to the wallet's watch list`);
+    throw new Error(
+      `${symbol || address} not added to the wallet's watch list`,
+    );
   }
 
   storage?.setItem(storageKey, watchedAssets.concat(tokenId));
