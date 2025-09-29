@@ -1,11 +1,11 @@
-# wallet-watch-asset
+# @hemilabs/wallet-watch-asset
 
 A JavaScript library for adding ERC20 tokens to EIP-747 compatible wallets like MetaMask. This package provides a simple way to help users track new tokens in their wallet.
 
 ## Installation
 
 ```bash
-npm install wallet-watch-asset
+npm install @hemilabs/wallet-watch-asset
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install wallet-watch-asset
 The library provides a simple function to add an ERC20 token to a user's wallet watch list:
 
 ```javascript
-const watchAsset = require("wallet-watch-asset");
+const watchAsset = require("@hemilabs/wallet-watch-asset");
 
 // Example token (in Uniswap Token List format)
 const token = {
