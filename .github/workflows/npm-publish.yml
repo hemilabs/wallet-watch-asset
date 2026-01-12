@@ -12,7 +12,7 @@ jobs:
       id-token: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - uses: hemilabs/actions/publish-to-npm@b471cbde41d4cb795b7840eb8608b95168970de1
         with:
           provenance: "true"
